@@ -42,8 +42,8 @@ if (isset($_POST['knop'])
 <h1><?php echo $message; ?></h1>
 <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
 <main>
-    <form action="login.php" method="post">
-        <h1>Login</h1>
+    <form action="login_student.php" method="post">
+        <h1>Login als docent</h1>
         <div>
             <label for="username">Username:</label>
             <input type="text" name="username" id="username">
@@ -55,6 +55,7 @@ if (isset($_POST['knop'])
         <section>
             <button type="submit">Login</button>
             <a href="register.php">Register</a>
+            <a href="login_student.php">login als student</a>
         </section>
     </form>
 </main>
